@@ -23,9 +23,7 @@ section{
 }
 
 .img-align img{
-    max-width: 1000px;
-    min-width: 100px;
-    height: 100%;
+    max-width: 500px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
