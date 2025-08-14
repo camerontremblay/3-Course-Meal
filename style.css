@@ -11,6 +11,19 @@ h1, h2{
 section{
     border: 2px solid #ee9b00;
     border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin: 20px;
     padding: 20px;
+}
+
+.img-align{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.img-align img{
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
