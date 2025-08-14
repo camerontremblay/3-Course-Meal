@@ -7,3 +7,10 @@ h1, h2{
     color: #1b3a4b;
     text-align: center;
 }
+
+section{
+    border: 2px solid #f4a261;
+    border-radius: 40px;
+    margin: 20px;
+    padding: 20px;
+}
