@@ -11,6 +11,12 @@ h1, h2{
     text-align: center;
 }
 
+h2{
+    border-bottom: 2px solid #ee9b00;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
 section{
     border: 2px solid #ee9b00;
     border-radius: 40px;
@@ -19,36 +25,41 @@ section{
     padding: 20px;
 }
 
-section:hover {
-  transform: scale(1.02);
-  transition: 0.2s ease;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
 .recipe-content {
   display: flex;
-  align-items: stretch; /* equal height columns */
+  align-items: stretch;
   gap: 20px;
 }
 
 .ingredients {
-  flex: 0.8; /* smaller column */
+  flex: 0.8;
 }
 
 .recipe-image {
-  flex: 1.2; /* bigger column */
+  flex: 1.2;
   display: flex;
-  align-items: center;   /* vertically center image */
-  justify-content: center; /* horizontally center image */
+  align-items: center;
+  justify-content: center;
 }
 
 .recipe-image img {
-  height: 100%; /* now matches .ingredients height */
-  width: auto;      /* don’t distort width */
-  object-fit: contain; /* scale inside box */
+  height: 100%;
+  width: auto;
+  object-fit: contain;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
+@media (max-width: 768px) {
+    .recipe-content {
+        flex-direction: column;
+    }
+    .recipe-image img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 
 
 
