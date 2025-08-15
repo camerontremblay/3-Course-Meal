@@ -34,7 +34,7 @@ section{
 }
 
 .recipe-image img {
-  max-height: 100%; /* now matches .ingredients height */
+  height: 100%; /* now matches .ingredients height */
   width: auto;      /* don’t distort width */
   object-fit: contain; /* scale inside box */
   border-radius: 15px;
