@@ -18,26 +18,28 @@ section{
 
 .recipe-content {
   display: flex;
-  align-items: stretch; /* equal height for both sides */
+  align-items: stretch; /* equal height columns */
   gap: 20px;
 }
 
-.recipe-image {
-  flex: 1.2; /* bigger than ingredients */
-  display: flex;
+.ingredients {
+  flex: 0.8; /* smaller column */
 }
 
-.ingredients{
-    flex: 0.8;
+.recipe-image {
+  flex: 1.2; /* bigger column */
+  display: flex;
+  align-items: center;   /* vertically center image */
+  justify-content: center; /* horizontally center image */
 }
 
 .recipe-image img {
-  width: 100%;        /* fill container horizontally */
-  height: auto;       /* keep proportions */
-  max-height: 100%;   /* don’t go taller than ingredients */
-  object-fit: cover;  /* crop nicely instead of squish */
+  max-height: 100%; /* now matches .ingredients height */
+  width: auto;      /* don’t distort width */
+  object-fit: contain; /* scale inside box */
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
 
 
