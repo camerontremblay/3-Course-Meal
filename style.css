@@ -16,14 +16,26 @@ section{
     padding: 20px;
 }
 
-.img-align{
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
+.recipe-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
 }
 
-.img-align img{
-    max-width: 500px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.ingredients {
+  flex: 1;
+}
+
+.recipe-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.recipe-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
