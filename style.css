@@ -24,6 +24,12 @@ section{
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin: 20px;
     padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .recipe-content {
@@ -55,11 +61,16 @@ section{
     .recipe-content {
         flex-direction: column;
     }
+    .ingredients,
+    .recipe-image {
+        padding: 5px;
+    }
     .recipe-image img {
         width: 100%;
         height: auto;
     }
 }
+
 
 
 
